@@ -1,7 +1,7 @@
 class Persona():
   def __init__(self, nombre):
-    self.__nombre__ = nombre
+    self.nombre = nombre
 
-  def presentar():
+  def presentar(self):
     print("Mi nombre es: ", self.nombre)
   
