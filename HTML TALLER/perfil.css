@@ -1,0 +1,81 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+body{
+  background:#e6e6e6;
+  font-family:helvetica;
+}
+
+header, .wrapper, footer{
+  width:90%;
+  margin:20px auto;
+  max-width:1000px;
+}
+
+header nav {
+  background:#528FD5;
+  overflow:hidden;
+}
+
+header nav ul{
+  list-style:none;
+  margin-left:22%;
+}
+
+header nav ul li {
+  float:left;
+}
+
+header nav ul li a.text {
+  padding:10px 20px;
+  display:block;
+  color:#fff;
+  text-decoration:none;
+}
+
+header nav ul li a:hover {
+  background:#75ACEC;
+}
+/*COMENZAMOS CON EL CUERPO*/
+.wrapper .main {
+  width:100%;
+  float:left;
+}
+
+.wrapper .main article {
+  background:#fff;
+  padding-bottom:50px;
+  margin-bottom:20px;
+}
+
+.wrapper .main article div.BOX1 {
+  text-align:center;
+}
+
+.wrapper .main article div.BOX2 {
+  text-align:center;
+}
+
+.wrapper .main article div.BOX2 p {
+  margin-bottom:1%;
+}
+
+.wrapper .main article div.BOX1 img {
+  width: 30%;
+  margin-top:50px;
+  margin-bottom:20px;
+  border-radius:50%;
+  border: 5px solid #75ACEC;
+}
+
+/*FOOTER*/
+
+footer {
+  background:#000;
+  color:#fff;
+  clear:both;
+  padding:10px 0px;
+  text-align:center;
+}

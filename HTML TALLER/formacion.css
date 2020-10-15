@@ -1,0 +1,107 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+body{
+  background:#e6e6e6;
+  font-family:helvetica;
+}
+
+header, .wrapper, footer{
+  width:90%;
+  margin:20px auto;
+  max-width:1000px;
+}
+
+header nav {
+  background:#528FD5;
+  overflow:hidden;
+}
+
+header nav ul{
+  list-style:none;
+  margin-left:22%;
+}
+
+header nav ul li {
+  float:left;
+}
+
+header nav ul li a.text {
+  padding:10px 20px;
+  display:block;
+  color:#fff;
+  text-decoration:none;
+}
+
+header nav ul li a:hover {
+  background:#75ACEC;
+}
+
+/*TABLA*/
+.wrapper .main {
+  width:100%;
+  float:left;
+}
+
+.wrapper .main article {
+  background:#fff;
+  margin-bottom:20px;
+}
+
+.wrapper .main article div.BOX1 {
+  text-align:center;
+  color: white;
+  background:#70ae6e;
+  margin-bottom:20px;
+}
+
+.wrapper .main article div.BOX2 table {
+  padding:0px 0px 20px 0px;
+  width:100%;
+  border-collapse:separate;
+  border-style:hidden;
+  border-spacing:5px 15px;
+}
+
+.wrapper .main article div.BOX2 table.table1 tr td, .wrapper .main article div.BOX2 table.table1 tr th {
+  border-width: 2px;
+  border-style: solid;
+  border-color:#B8D7B7;
+  background:#B8D7B7;
+  padding-left:5px;
+  padding-right:5px;
+  padding-bottom: 5px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.wrapper .main article div.BOX2 table.table1 tr td.NormalText {
+  text-align: center;
+}
+
+.wrapper .main article div.BOX2 table.table1 tr th.Titulo {
+  width:231px;
+}
+
+.wrapper .main article div.BOX2 table.table2 tr td{
+  border-width: 2px;
+  border-style: solid;
+  border-color:#B8D7B7;
+  background:#B8D7B7;
+  padding-left:5px;
+  padding-right:5px;
+  padding-bottom: 5px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+/*footer*/
+footer {
+  background:#000;
+  color:#fff;
+  clear:both;
+  padding:10px 0px;
+  text-align:center;
+}

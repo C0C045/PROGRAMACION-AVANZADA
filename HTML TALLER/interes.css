@@ -1,0 +1,128 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+body{
+  background:#e6e6e6;
+  font-family:helvetica;
+}
+
+header, .wrapper, footer{
+  width:90%;
+  margin:20px auto;
+  max-width:1000px;
+}
+
+header nav {
+  background:#528FD5;
+  overflow:hidden;
+}
+
+header nav ul{
+  list-style:none;
+  margin-left:22%;
+}
+
+header nav ul li {
+  float:left;
+}
+
+header nav ul li a.text {
+  padding:10px 20px;
+  display:block;
+  color:#fff;
+  text-decoration:none;
+}
+
+header nav ul li a:hover {
+  background:#75ACEC;
+}
+
+/*CUERPO*/
+.wrapper .main {
+  width:100%;
+  float:left;
+}
+
+.wrapper .main article {
+  background:#fff;
+  padding-bottom:20px;
+  margin-bottom:20px;
+  overflow:hidden;
+}
+
+.wrapper .main article div.TITULO {
+  text-align:center;
+  color: white;
+  background:#70ae6e;
+  margin-bottom:40px;
+  overflow:hidden;
+}
+
+.wrapper .main article div.BOX1, .wrapper .main article div.BOX2, .wrapper .main article div.BOX3, .wrapper .main article div.BOX4, .wrapper .main article div.BOX5, .wrapper .main article div.BOX6, .wrapper .main article div.BOX7, .wrapper .main article div.BOX8, .wrapper .main article div.BOX9{
+  background:#B8D7B7;
+  width:30%;
+  height:30%;
+  margin-left:2.5%;
+  margin-bottom:2.5%;
+  text-align:center;
+  float:left;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  box-sizing:border-box;
+}
+
+.wrapper .main article div p {
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.wrapper .main article div img {
+  margin-bottom:10px;
+}
+
+.wrapper .main article div.BOX1 img {
+  width:146px;
+}
+
+.wrapper .main article div.BOX2 img {
+  width:103.5px;
+}
+
+.wrapper .main article div.BOX3 img {
+  width:195px;
+}
+
+.wrapper .main article div.BOX4 img {
+  width:193px;
+}
+
+.wrapper .main article div.BOX5 img {
+  width:50%;
+}
+
+.wrapper .main article div.BOX6 img {
+  width:50%;
+}
+
+.wrapper .main article div.BOX7 img {
+  width:50%;
+}
+
+.wrapper .main article div.BOX8 img {
+  width:50%;
+}
+
+.wrapper .main article div.BOX9 img {
+  width:50%;
+}
+
+/*Footer*/
+footer {
+  background:#000;
+  color:#fff;
+  clear:both;
+  padding:10px 0px;
+  text-align:center;
+}
