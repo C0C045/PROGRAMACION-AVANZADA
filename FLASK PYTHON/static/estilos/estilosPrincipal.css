@@ -1,0 +1,90 @@
+table{
+	background:#E0E1DD;
+    padding: 2px;
+	text-align: center;
+	width: 100%;
+}
+
+.cuadroDatos{
+	border: none;
+}
+
+body{
+	background: #E0E1DD;
+	font-size: 1.4vw;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.tec{
+	background: #f48c06;
+	color: white;
+	padding: 7px
+}
+
+tr,th,td{
+  	border-radius: 15px;
+	border:#08243a 2px solid;
+}
+
+img{
+	padding: 5px;
+	width:14vw;
+	border-radius: 10px;
+}
+
+a:hover{
+	color: black;
+	background: #E0E1DD;
+}
+	
+.link1,.link2{
+	text-decoration: none;
+	width: 100%;
+    font-size: 20px;
+    color: white;
+    background-color: #1883ba;
+    border-radius: 10px;
+}
+
+.link1{
+	font-size: 1.2vw;
+	padding-left: 30%;
+	padding-right: 30%;
+}
+
+.link2{
+	font-size: 1.2vw;
+	padding-left: 29%;
+	padding-right: 29%;
+}
+
+.costados{
+	height: 38px;
+	background:#192129;
+	overflow: hidden;
+}
+
+/*menu*/
+.nav{
+  	overflow: hidden;
+  	background-color: #192129;
+}
+
+.nav a{
+  	float: left;
+  	color: white;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	font-size: 17px;
+}
+
+.nav a:hover{
+  	background-color: #E0E1DD;
+  	color: black;
+}
+
+.nav a.datos{
+  	background-color: #f48c06;
+  	color: white;
+}

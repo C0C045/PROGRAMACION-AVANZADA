@@ -1,0 +1,49 @@
+* {
+  margin:0;
+  padding:0;
+}
+ body {
+   background:#000;
+ }
+
+ header, .wrapper, footer {
+   width:90%;
+   margin:25% auto;
+   max-width:1000px;
+ }
+
+ header nav {
+   background:#528FD5;
+   overflow:hidden;
+ }
+
+ header nav ul {
+   list-style:none;
+   margin-left:2.4%;
+ }
+
+ header nav ul li {
+   float:left;
+   margin-left:40px;
+ }
+
+  header nav ul li a {
+    padding:10px 20px;
+    display:block;
+    color:#fff;
+    text-decoration:none;
+  }
+
+  header nav ul li a:hover {
+    background:#75ACEC;
+  }
+
+  div{
+    position: absolute;
+    left:40%;
+    bottom:35%;
+  }
+
+  div p {
+    color:#00FFE8;
+  }

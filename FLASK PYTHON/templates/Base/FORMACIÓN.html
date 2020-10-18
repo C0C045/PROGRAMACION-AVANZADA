@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='styles/formacion.css') }}">
+  <title>HISTORIA ACADÉMICA</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('main') }}" class="text">HOME</a></li>
+        <li><a href="{{ url_for('id') }}" class="text">PERFIL</a></li>
+        <li><a href="{{ url_for('fact') }}" class="text">DATOS BASICOS</a></li>
+        <li><a href="{{ url_for('formation') }}" class="text">FORMACIÓN</a></li>
+        <li><a href="{{ url_for('likes') }}" class="text">INTERESES</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="wrapper">
+    <section class="main">
+      <article>
+        <div class="BOX1">
+          <h2><p>HISTORIA ACADÉMICA</p></h2>
+        </div>
+        <div class="BOX2">
+          <table border=1 class ="table1">
+            <tr>
+              <th class="Titulo">ESTUDIOS</th>
+              <th class="resaltado">AÑO DE FINALIZACIÓN</th>
+              <th class="resaltado">AÑOS CURSADOS</th>
+              <th class="resaltado">TITULO OBTENIDO</th>
+              <th class="resaltado">NOMBRE DE LA INSTITUCIÓN</th>
+              <th class="resaltado">CIUDAD</th>
+            </tr>
+            <tr>
+              <td class="Titulo"><b><font size=2.7px>PRIMARIA</font></b></td>
+              <td class="NormalText"><font size=2px>2012</font></td>
+              <td class="NormalText"><font size=2px>6 AÑOS</font></td>
+              <td class="NormalText"><font size=2px>BÁSICA PRIMARIA</font></td>
+              <td class="NormalText"><font size=2px>FERNANDO MAZUERA VILLEGAS</font></td>
+              <td class="NormalText"><font size=2px>BOGOTÁ D.C</font></td>
+            </tr>
+            <tr>
+              <td class="Titulo"><b><font size=2.7px>BACHILLERATO</font></b></td>
+              <td class="NormalText"><font size=2px>2018</font></td>
+              <td class="NormalText"><font size=2px>6 AÑOS</font></td>
+              <td class="NormalText"><font size=2px>BACHILLER</font></td>
+              <td class="NormalText"><font size=2px>EXTERNADO NACIONAL CAMILO TORRES</font></td>
+              <td class="NormalText"><font size=2px>BOGOTÁ D.C</font></td>
+            </tr>
+            <tr>
+              <td rowspan=3 class="Titulo" style="LINE-HEIGHT:40px"><b><font size=2.7px>EDUCACIÓN SUPERIOR:</font></b><font size=2px> TÉCNICO <b>✔</b></font><font size=2px><p align="right" class="SRyu">TECNOLÓGICO <b>X</b></p></font><font size=2px><p align="right" class="SRyu">PROFESIONAL <b>X</b></p></font></td>
+              <td class="NormalText"><font size=2px>2018</font></td>
+              <td class="NormalText"><font size=2px>1 AÑO</font></td>
+              <td class="NormalText"><font size=2px>TÉCNICO EN INSTALACIONES ELECTRICAS RESIDENCIALES</font></td>
+              <td class="NormalText"><font size=2px>SENA</font></td>
+              <td class="NormalText"><font size=2px>BOGOTÁ D.C</font></td>
+            </tr>
+            <tr>
+              <td class="NormalText"><font size=2px><b>-</b></font></td>
+              <td class="NormalText"><font size=2px><b>-</b></font></td>
+              <td class="NormalText"><font size=2px><b>-</b></font></td>
+              <td class="NormalText"><font size=2px><b>-</b></font></td>
+              <td class="NormalText"><font size=2px><b>-</b></font></td>
+            </tr>
+            <tr>
+              <td class="NormalText"><font size=2px><b>-</b></font></td>
+              <td class="NormalText"><font size=2px><b>-</b></font></td>
+              <td class="NormalText"><font size=2px><b>-</b></font></td>
+              <td class="NormalText"><font size=2px><b>-</b></font></td>
+              <td class="NormalText"><font size=2px><b>-</b></font></td>
+            </tr>
+          </table>
+          <table border=1 class="table2" style="LINE-HEIGHT:20px">
+            <tr>
+              <td><b><font size=2.7px>¿CURSA ESTUDIOS ACTUALMENTE?</font></b><br><font size=2px><b><center>Sí: ✔   No: </center></b></font></td>
+              <td><b><font size=2.7px>¿QUÉ TIPOS DE ESTUDIOS?</font></b><br><font size=2px><center>UNIVERSITARIOS - ING. DE SISTEMAS</center></font></td>
+              <td><b><font size=2.7px>DURACIÓN</font></b><br><font size=2px><center>10 SEMESTRES</center></font></td>
+              <td><b><font size=2.7px>AÑO / SEMESTRE QUE CURSA</font></b><br><font size=2px><center>TERCER SEMESTRE</center></font></td>
+              <td><b><font size=2.7px>¿MANEJA UN SEGUNDO IDIOMA?</font></b><br><font size=2px><b><center>Sí: ✔   No: </center></b></font></td>
+              <td><b><font size=2.7px>¿CUÁL?</font></b><br><font size=2px><center>INGLÉS</center></font></td>
+            </tr>
+          </table>
+        </div>
+      </article>
+    </section>
+  </section>
+  <footer>
+    <p><b>HOJAS DE VIDA - CaroExpert Corporation</b></p>
+  </footer>
+</body>
+</html>

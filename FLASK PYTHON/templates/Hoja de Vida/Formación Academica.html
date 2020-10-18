@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formación Academica</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='estilos/estilosFormación.css') }}">
+</head>
+<body>
+	<div class="nav">
+		<a href="{{ url_for('main') }}">HOME</a>
+	  	<a class="datos" href="{{ url_for('datos') }}">Datos Basicos</a>
+	  	<a class="formacion" href="{{ url_for('formacion') }}">Formación Academica</a>
+	 	 <a class="tecnologia" href="{{ url_for('tecnologia') }}">Tecnología de Interes</a>
+	</div>
+	<div class="principal">
+		<hr>
+		<br>
+		<div class="cuadros">
+			<p>
+				<img src="{{ url_for('static', filename='imagenes/colegioLogo.png') }}" align="left">
+				<h1>ESTUDIOS BASICOS</h1>
+				Mis estudios fueron realizados en el colegio Liceo Cultural Mosquera, <br>desde el primer hasta el ultimo grado
+		</div>	 
+		<br><br>
+		<hr>
+		<br>
+		<div class="cuadros">
+			<p><img src="{{ url_for('static', filename='imagenes/senaLogo.png') }}" align="right">
+				<h1>TECNICO EN PROGRAMACIÓN DE SOFTWARE</h1>
+				Realice un tecnico en el SENA (Servicio Nacional de Aprendizaje)<br> empleando varios conceptos de la programación
+			</p>
+		</div>	
+		<br><br>
+		<hr>
+		<br>
+		<div class="cuadros">
+			<p>
+				<img src="{{ url_for('static', filename='imagenes/uLogo.png') }}" align="all">	
+				<h1>INGENIERIA DE SISTEMAS</h1>
+				Actualmente en estado de aprendizaje, en una formacion profesional como Ingeniero.
+				Estudiando en la Universidad Distrital Francisco Jose de Caldas
+			</p>
+		</div>
+	</div>
+</body>
+</html>

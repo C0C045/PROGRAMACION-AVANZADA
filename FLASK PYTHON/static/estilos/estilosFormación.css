@@ -1,0 +1,43 @@
+.principal{
+	/*background: white;*/
+	width: 60%;
+	margin-left: 18%;
+	padding: 20px;
+}
+
+body{
+	margin: 0;
+  	font-family: Arial, Helvetica, sans-serif;
+	background:#E0E1DD;
+}
+
+.cuadros{
+	display: block;
+	text-align: center;
+}
+
+/*menu*/
+.nav{
+	margin-bottom: 10px;
+  	overflow: hidden;
+  	background-color: #192129;
+}
+
+.nav a{
+  	float: left;
+  	color: white;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	font-size: 17px;
+}
+
+.nav a:hover{
+  	background-color: #E0E1DD;
+  	color: black;
+}
+
+.nav a.formacion{
+  	background-color: #f48c06;
+  	color: white;
+}

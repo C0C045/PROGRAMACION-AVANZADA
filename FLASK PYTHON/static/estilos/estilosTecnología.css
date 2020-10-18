@@ -1,0 +1,96 @@
+.principal{
+	/*background: white;*/
+	width: 60%;
+	margin-left: 18%;
+	padding: 20px;
+}
+
+table{
+	margin-left: 20%;
+	margin-right:20%;
+	border: #1b4965 2px solid;
+	width: 60%;
+	border-radius: 15px;
+}
+
+img{
+	border-radius: 50%;
+	border:solid 2px black;
+	padding: 5px;
+	width: 50%; 
+	height: 50%;
+}
+
+.iconos{
+	position: relative;
+	display: inline-block;
+	padding: 20px;
+	float: center;
+	margin-left: 60px;
+	border: 6px dotted #1b4965;
+	width: 32%;
+	text-align: center;
+}
+
+
+body{
+	background:#E0E1DD;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+td{
+	width: 70%;
+    border: 2px solid #1b4965;
+  	border-radius: 15px;
+}
+
+.rellenolinux ,.rellenodiseño,.rellenorojo,.rellenogit{
+   	padding: 10px;
+   	border-radius:10px;
+}
+
+.rellenolinux{
+	width: 30%;
+   	background: yellow;
+}
+
+.rellenodiseño{
+	width: 70%;
+   	background: green;
+}
+
+.rellenorojo{
+	width: 15%;
+   	background: red;
+}
+
+.rellenogit{
+	width: 45%;
+   	background: orange;
+}
+
+/*menu*/
+.nav{
+	margin-bottom: 10px;
+  	overflow: hidden;
+  	background-color: #192129;
+}
+
+.nav a{
+  	float: left;
+  	color: white;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	font-size: 17px;
+}
+
+.nav a:hover{
+  	background-color: #E0E1DD;
+  	color: black;
+}
+
+.nav a.tecnologia{
+  	background-color: #f48c06;
+  	color: white;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HOJA DE VIDA</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='estilos/estilosPrincipal.css') }}">
+</head>
+<body>
+	<div class="nav">
+		<a href="{{ url_for('main') }}">HOME</a>
+	 	<a class="datos" href="{{ url_for('datos') }}">Datos Basicos</a>
+	  	<a class="formacion" href="{{ url_for('formacion') }}">Formación Academica</a>
+	  	<a class="tecnologia" href="{{ url_for('tecnologia') }}">Tecnología de Interes</a>
+	</div>
+	<table >
+		<tr>
+			<td rowspan="3" class="cuadroDatos">
+				<table class="infoP">
+					<tr>
+						<th colspan="7"><h2 class="tec">INFORMACION PERSONAL</h2></th>
+					</tr>
+					<tr>
+						<th rowspan="5" colspan="2"><img src="{{ url_for('static', filename='imagenes/foto.jpg') }}"></th>
+						<th colspan="2"><h1>DIEGO ALEJANDRO <br>BAUTISTA CASTAÑEDA</h1></th>
+					</tr>
+					<tr>
+						<td rowspan="4"><b>Datos basicos<b></td>
+					</tr>
+					<tr><td><b>Telefono:</b> +57 3228943206</td></tr>
+					<tr><td><b>Correo:</b> diegobautistac</td></tr>
+					<tr><td><b>Codigo:</b> 20192020139</td></tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td class="cuadroDatos">
+				<table class="Form">
+					<tr >
+						<td><h2 class="tec">FORMACIÓN <br>ACADEMICA</h2><br><hr>UNIVERSIDAD DISTRITAL <br>FANCISO JOSE DE CALDAS</td>
+						<td><img src="{{ url_for('static', filename='imagenes/academico.png') }}"></td>
+					</tr>
+					<tr>
+						<td colspan="2"><a href="Formación Academica" class="link1">Ver todos los Estudios Academicos</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td class="cuadroDatos">
+				<table class="Tec">
+					<tr>
+						<td><img src="{{ url_for('static', filename='imagenes/tec.png') }}"></td>
+						<td colspan="5"><b><h2 class="tec">TECNOLOGÍAS DE INTERES</h2></b></td>
+						<tr>
+							<td colspan="2"><a href="Tecnología de Interes.html" class="link2">Ver todos las Tecnologias de Interes</a></td>
+						</tr>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<div class="costados">
+	</div>
+</body>
+</html>

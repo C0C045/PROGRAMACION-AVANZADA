@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TECNOLOGÍAS DE INTERES</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='estilos/estilosTecnología.css') }}">
+</head>
+<body>
+    <div class="nav">
+        <a href="{{ url_for('main') }}">HOME</a>
+        <a class="datos" href="{{ url_for('datos') }}">Datos Basicos</a>
+        <a class="formacion" href="{{ url_for('formacion') }}">Formación Academica</a>
+        <a class="tecnologia" href="{{ url_for('tecnologia') }}">Tecnología de Interes</a>
+    </div>
+	<div class="principal"> 
+        <br>
+		<table>
+            <tr>
+                <th>JAVA</th>
+                <td><div class="rellenogit"></div></td>
+            </tr>
+            <tr>
+                <th>Linux</th>
+                <td><div class="rellenolinux"></td>
+            </tr>
+            <tr>
+                <th>PHP</th>
+                <td><div class="rellenorojo"></td>
+            </tr>
+            <tr>
+                <th>HTML</th>
+                <td><div class="rellenodiseño"></td>
+            </tr>
+            <tr>
+                <th>CSS</th>
+                <td><div class="rellenodiseño"></td>    
+            </tr>
+            <tr>
+                <th>GitHub</th>
+                <td><div class="rellenogit"></td>
+            </tr>
+        </table>
+        <br><br>
+        <div class="iconos">
+            <img src="{{ url_for('static', filename='imagenes/javaLogo.png') }}" >
+            <p>Java, capaz de ejecutar aplicaciones desarrolladas usando el lenguaje de programación Java u otros lenguajes que compilen a bytecode y un conjunto de herramientas de desarrollo</p>
+        </div>
+        <div class="iconos">
+            <img src="{{ url_for('static', filename='imagenes/linuxLogo.png') }}">
+            <p>GNU/Linux es la denominación técnica y generalizada que reciben una serie de sistemas operativos de tipo Unix.</p>
+        </div>
+        <div class="iconos">
+            <img src="{{ url_for('static', filename='imagenes/phpLogo.png') }}">
+            <p>PHP es un lenguaje de programación de uso general que se adapta especialmente al desarrollo web.​</p>
+        </div>
+        <div class="iconos">
+            <img src="{{ url_for('static', filename='imagenes/htmlLogo.png') }}">
+            <p>HTML, siglas en inglés de HyperText Markup Language, hace referencia al lenguaje de marcado para la elaboración de páginas web.</p>
+        </div>
+        <div class="iconos">
+            <img src="{{ url_for('static', filename='imagenes/cssLogo.png') }}">
+            <p>CSS, es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado.</p>
+        </div>
+        <div class="iconos">
+            <img src="{{ url_for('static', filename='imagenes/gitLogo.png') }}">
+            <p>GitHub es una forja para alojar proyectos utilizando el sistema de control de versiones Git. Se utiliza principalmente para la creación de código fuente de programas de ordenador. </p>
+        </div>
+	</div>
+</body>
+</html>
