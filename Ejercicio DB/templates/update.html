@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hoja de vida</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/default.css') }}">
+</head>
+  <body>
+     <nav>
+        <a href = "{{ url_for('show_all') }}">Mostrar Estudiantes</a> |
+        <a href = "{{ url_for('new') }}">Añadir Estudiante</a>
+     </nav>
+     <section>
+       <h3>Hoja de vida</h3>
+      <form action = "/update_record" method = "post">
+
+        <input type = "hidden" name = "oldname" value = "{{ oldname }}" /><br>
+
+        <label for = "name">Nombre</label>
+        <input type = "text" name = "name" value = "{{ result.name }}" /><br>
+
+        <label for = "lastName">Apellido</label>
+        <input type = "text" name = "lastName" value = "{{ result.lastName }}" /><br>
+
+        <label for = "code">Codigo</label>
+        <input type = "text" name = "code" value = "{{ result.code }}" /><br>
+
+        <label for = "years">Años</label>
+        <input type = "text" name = "years" value = "{{ result.years }}" /><br>
+        
+        <label for = "city">Ciudad</label>
+        <input type = "text" name = "city" value = "{{ result.city }}" /><br>
+
+        <label for = "address">Correo</label>
+        <textarea name = "address" placeholder = "address">{{ result.address }}</textarea><br>
+
+        <label for = "cel">Celular</label>
+        <input type = "text" name = "cel" value = "{{ result.cel }}" /><br>
+        
+        <label for = "rh">rh</label>
+        <input type = "text" name = "rh" value = "{{ result.rh }}" /><br>
+
+        <input type = "submit" value = "Submit" />
+
+      </form>
+    </section>
+   </body>
+</html>

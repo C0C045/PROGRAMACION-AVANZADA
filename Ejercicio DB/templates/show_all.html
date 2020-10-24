@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head>
+     <title>Hojas de Vida</title>
+     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/default.css') }}">
+   </head>
+   <body>
+      <nav>
+         <a href = "{{ url_for('show_all') }}">Mostrar Estudiantes</a> |
+         <a href = "{{ url_for('new') }}">Añadir Estudiante</a>
+      </nav>
+
+      <aside>
+        {%- for message in get_flashed_messages() %}
+           {{ message }}
+        {%- endfor %}
+      </aside>
+      <section>      
+        <h3>ESTUDIANTES</h3>
+
+        <table>
+           <thead>
+              <tr>
+                 <th>Nombre</th>
+                 <th>Apellido</th>
+                 <th>Codigo</th>
+                 <th>Años</th>
+                 <th>Ciudad</th>
+                 <th>Correo</th>
+                 <th>Celular</th>
+                 <th>rh</th>
+                 <th colspan="2">Acciones</th>
+              </tr>
+           </thead>
+
+           <tbody>
+              {% for student in students %}
+                 <tr>
+                    <td>{{ student.name }}</td>
+                    <td>{{ student.lastName }}</td>
+                    <td>{{ student.code }}</td>
+                    <td>{{ student.years }}</td>
+                    <td>{{ student.city }}</td>
+                    <td>{{ student.address }}</td>
+                    <td>{{ student.cel }}</td>
+                    <td>{{ student.rh }}</td>
+                    <td>
+                      <form method="POST" action="/update" style="display: inline">
+                        <input type="hidden" value="{{student.name}}" name="oldname">
+                        <input type="submit" value="Update">
+                      </form>
+                    </td>
+                    <td>
+                      <form method="POST" action="/delete" style="display: inline">
+                        <input type="hidden" value="{{student.name}}" name="oldname">
+                        <input type="submit" value="Delete">
+                      </form>
+                    </td>
+                 </tr>
+              {% endfor %}
+           </tbody>
+        </table>
+    </section>
+   </body>
+</html>
