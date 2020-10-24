@@ -6,7 +6,7 @@
 </head>
   <body>
      <nav>
-        <a href = "{{ url_for('show_all') }}">Mostrar Estudiantes</a> |
+        <a href = "{{ url_for('show_all') }}">Mostrar Estudiantes</a>
         <a href = "{{ url_for('new') }}">Añadir Estudiante</a>
      </nav>
      <section>
@@ -26,16 +26,16 @@
 
         <label for = "years">Años</label>
         <input type = "text" name = "years" value = "{{ result.years }}" /><br>
-        
+
         <label for = "city">Ciudad</label>
         <input type = "text" name = "city" value = "{{ result.city }}" /><br>
 
         <label for = "address">Correo</label>
-        <textarea name = "address" placeholder = "address">{{ result.address }}</textarea><br>
+        <input type = "text" name = "address" value = "{{ result.address }}" /><br>
 
         <label for = "cel">Celular</label>
         <input type = "text" name = "cel" value = "{{ result.cel }}" /><br>
-        
+
         <label for = "rh">rh</label>
         <input type = "text" name = "rh" value = "{{ result.rh }}" /><br>
 
