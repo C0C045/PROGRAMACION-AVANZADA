@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Students</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/default.css') }}">
+</head>
+<body>
+   <nav>
+      <a href = "{{ url_for('show_all') }}">HOME</a>
+   </nav>
+      <section>
+      <h3>FORMACIÓN ACADÉMICA</h3>
+
+      {%- for category, message in get_flashed_messages(with_categories = true) %}
+         <div class = "alert alert-danger">
+            {{ message }}
+         </div>
+      {%- endfor %}
+
+      <form action = "{{ request.path }}" method = "post">
+
+         <label for = "primary">Primaria</label>
+         <input type = "text" name = "primary" placeholder = "¿DÓNDE ESTUDIO?" /><br>
+
+         <label for = "secundary">Bachillerato</label>
+         <input type = "text" name = "secundary" placeholder = "¿DÓNDE ESTUDIO?" /><br>
+
+         <label for = "tecn1">Técnico</label>
+         <input type = "text" name = "tecn1" placeholder = "TITULO" /><br>
+
+         <label for = "tecn2">Tecnologo</label>
+         <input type = "text" name = "tecn2" placeholder = "TITULO" /><br>
+
+         <label for = "collegue">Universidad</label>
+         <input type = "text" name = "collegue" placeholder = "TITULO" /><br>
+
+         <label for = "other">Otro</label>
+         <input type = "text" name = "other" placeholder = "TITULO" /><br>
+
+         <input type = "submit" value = "Submit" />
+      </form>
+    </section>
+   </body>
+</html>

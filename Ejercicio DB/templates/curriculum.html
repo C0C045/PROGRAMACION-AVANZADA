@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head>
+     <title>Hojas de Vida</title>
+     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/default.css') }}">
+   </head>
+   <body>
+      <nav>
+         <a href = "{{ url_for('show_all') }}">HOME</a>
+      </nav>
+
+      <aside>
+        {%- for message in get_flashed_messages() %}
+           {{ message }}
+        {%- endfor %}
+      </aside>
+      <section>
+        <h3><center>HOJA DE VIDA</center></h3>
+        <h3><center>{{ student.name }}</center></h3>
+
+        <table>
+           <thead>
+              <tr>
+                 <th>Nombre</th>
+                 <th>Apellido</th>
+                 <th>Codigo</th>
+                 <th>Años</th>
+                 <th>Ciudad</th>
+                 <th>Correo</th>
+                 <th>Celular</th>
+                 <th>RH</th>
+              </tr>
+           </thead>
+
+           <tbody>
+                 <tr>
+                    <td>{{ student.name }}</td>
+                    <td>{{ student.lastName }}</td>
+                    <td>{{ student.code }}</td>
+                    <td>{{ student.years }}</td>
+                    <td>{{ student.city }}</td>
+                    <td>{{ student.address }}</td>
+                    <td>{{ student.cel }}</td>
+                    <td>{{ student.rh }}</td>
+                 </tr>
+           </tbody>
+        </table>
+    </section>
+   </body>
+</html>

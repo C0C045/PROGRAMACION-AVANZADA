@@ -29,6 +29,9 @@
                  <th>Correo</th>
                  <th>Celular</th>
                  <th>RH</th>
+                 <th>Formación</th>
+                 <th>Intereses</th>
+                 <th>Ver</th>
                  <th colspan="2">Acciones</th>
               </tr>
            </thead>
@@ -44,6 +47,9 @@
                     <td>{{ student.address }}</td>
                     <td>{{ student.cel }}</td>
                     <td>{{ student.rh }}</td>
+                    <td><a href="{{ url_for('academic') }}"><center><img src="https://i.pinimg.com/originals/8d/99/92/8d9992503a401b5e024e3f131792a4ed.png" width="30px"></center></a></td>
+                    <td><a href="{{ url_for('hobbies') }}"><center><img src="https://www.nicepng.com/png/full/1011-10112146_red-dice-png-transparent-images-dado-clipart.png" width="30px"></center></a></td>
+                    <td><a href="{{ url_for('curriculum') }}"><center><img src="https://img.pngio.com/ojo-de-vigilancia-coloreado-icono-de-trazo-descargar-png-svg-ojo-png-512_512.png" width="30px"></center></a></td>
                     <td>
                       <form method="POST" action="/update" style="display: inline">
                         <input type="hidden" value="{{student.name}}" name="oldname">
