@@ -71,8 +71,8 @@ def show_all():
 
 @app.route('/curriculum')
 def curriculum():
-    id = request.form.get("id")
-    return render_template('curriculum.html', student = students.query.filter_by(id=id).first())
+    id = request.form.get("student_id")
+    return render_template('curriculum.html', student = students.query.filter_by(id=1).first())
 
 @app.route('/new', methods = ['GET', 'POST'])
 def new():

@@ -3,7 +3,7 @@ body {
 }
 nav {
 	font-size: 15px;
-	background-color:#528FD5;
+	background-color:#264653;
 	text-align: left;
 	border-color:#ffffff;
 	border-radius:15px;
@@ -20,7 +20,7 @@ nav a{
 nav a:hover{
 	text-decoration:none;
 	color:#fff;
-	background:#75ACEC;
+	background:#2a9d8f;
 }
 
 aside {
@@ -28,7 +28,7 @@ aside {
 	clear: none;
 }
 section {
-	background-color:#AF5D63;
+	background-color:#e9c46a;
 	border:2px solid;
 	border-color:#ffffff;
 	border-radius:15px;
@@ -67,14 +67,14 @@ label {
 td {
 	margin-left:50%;
 	border-style: solid;
-	border:1px solid #47333F;
+	border:1px solid #F29040;
 	border-top-right-radius: 10px;
 	border-bottom-left-radius: 10px;
 	margin:2em;
 	padding:1em;
 	font-family:Arial;
 	font-size:0.9em;
-	background:#846075;
+	background:#f4a261;
 }
 
 .validate {

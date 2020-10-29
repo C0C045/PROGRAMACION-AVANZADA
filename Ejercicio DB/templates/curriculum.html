@@ -2,7 +2,7 @@
 <html lang = "en">
    <head>
      <title>Hojas de Vida</title>
-     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/default.css') }}">
+     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/curriculum.css') }}">
    </head>
    <body>
       <nav>
@@ -15,14 +15,17 @@
         {%- endfor %}
       </aside>
       <section>
-        <h3><center>HOJA DE VIDA</center></h3>
-        <h3><center>{{ student.name }}</center></h3>
+        <h2><center>HOJA DE VIDA</center></h2>
 
-        <table>
+        <div>
+          <h3>DATOS BÁSICOS</h3>
+        </div>
+
+        <table class="data">
            <thead>
               <tr>
-                 <th>Nombre</th>
-                 <th>Apellido</th>
+                 <th>Nombres</th>
+                 <th>Apellidos</th>
                  <th>Codigo</th>
                  <th>Años</th>
                  <th>Ciudad</th>
@@ -32,7 +35,7 @@
               </tr>
            </thead>
 
-           <tbody>
+           <tbody class="data">
                  <tr>
                     <td>{{ student.name }}</td>
                     <td>{{ student.lastName }}</td>
@@ -42,6 +45,60 @@
                     <td>{{ student.address }}</td>
                     <td>{{ student.cel }}</td>
                     <td>{{ student.rh }}</td>
+                 </tr>
+           </tbody>
+        </table>
+
+        <div>
+          <h3>FORMACIÓN ACADÉMICA</h3>
+        </div>
+
+        <table class="data">
+           <thead>
+              <tr>
+                 <th>Primaria</th>
+                 <th>Secundaria</th>
+                 <th>Técnico</th>
+                 <th>Tecnólogo</th>
+                 <th>Universidad</th>
+                 <th>Otro</th>
+              </tr>
+           </thead>
+
+           <tbody class="data">
+                 <tr>
+                    <td>{{ student.primary }}</td>
+                    <td>{{ student.secundary }}</td>
+                    <td>{{ student.tecn1 }}</td>
+                    <td>{{ student.tecn2 }}</td>
+                    <td>{{ student.collegue }}</td>
+                    <td>{{ student.other }}</td>
+                 </tr>
+           </tbody>
+        </table>
+
+        <div>
+          <h3>TECNOLOGIAS E INTERESES</h3>
+        </div>
+
+        <table class="data">
+           <thead>
+              <tr>
+                 <th>Interés #1</th>
+                 <th>Interés #2</th>
+                 <th>Interés #3</th>
+                 <th>Interés #4</th>
+                 <th>Interés #5</th>
+              </tr>
+           </thead>
+
+           <tbody class="data">
+                 <tr>
+                    <td>{{ student.in1 }}</td>
+                    <td>{{ student.in2 }}</td>
+                    <td>{{ student.in3 }}</td>
+                    <td>{{ student.in4 }}</td>
+                    <td>{{ student.in5 }}</td>
                  </tr>
            </tbody>
         </table>
