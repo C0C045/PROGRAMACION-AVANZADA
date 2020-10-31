@@ -17,6 +17,8 @@
       <section>
         <h2><center>HOJA DE VIDA</center></h2>
 
+        <img src="{{ url_for('static', filename='Sin título-1.jpg') }}" width="200px"><br>
+
         <div>
           <h3>DATOS BÁSICOS</h3>
         </div>
@@ -67,12 +69,12 @@
 
            <tbody class="data">
                  <tr>
-                    <td>{{ student.primary }}</td>
-                    <td>{{ student.secundary }}</td>
-                    <td>{{ student.tecn1 }}</td>
-                    <td>{{ student.tecn2 }}</td>
-                    <td>{{ student.collegue }}</td>
-                    <td>{{ student.other }}</td>
+                    <td>{{ student1.primary }}</td>
+                    <td>{{ student1.secundary }}</td>
+                    <td>{{ student1.tecn1 }}</td>
+                    <td>{{ student1.tecn2 }}</td>
+                    <td>{{ student1.collegue }}</td>
+                    <td>{{ student1.other }}</td>
                  </tr>
            </tbody>
         </table>
@@ -94,11 +96,11 @@
 
            <tbody class="data">
                  <tr>
-                    <td>{{ student.in1 }}</td>
-                    <td>{{ student.in2 }}</td>
-                    <td>{{ student.in3 }}</td>
-                    <td>{{ student.in4 }}</td>
-                    <td>{{ student.in5 }}</td>
+                    <td>{{ student2.in1 }}</td>
+                    <td>{{ student2.in2 }}</td>
+                    <td>{{ student2.in3 }}</td>
+                    <td>{{ student2.in4 }}</td>
+                    <td>{{ student2.in5 }}</td>
                  </tr>
            </tbody>
         </table>

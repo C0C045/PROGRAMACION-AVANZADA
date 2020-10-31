@@ -1,10 +1,13 @@
 
 from flask import Flask, request, flash, url_for, redirect, render_template
 from flask_sqlalchemy import SQLAlchemy
+from werkzeug.utils import secure_filename
+import os
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///students.sqlite3'
 app.config['SECRET_KEY'] = "random string"
+app.config['UPLOAD_FOLDER'] = "./static"
 
 db = SQLAlchemy(app)
 
@@ -71,8 +74,21 @@ def show_all():
 
 @app.route('/curriculum')
 def curriculum():
-    id = request.form.get("student_id")
-    return render_template('curriculum.html', student = students.query.filter_by(id=1).first())
+    return render_template('curriculum.html', student = students.query.filter_by(id=1).first(),
+    student1 = students1.query.filter_by(id=1).first(),
+    student2 = students2.query.filter_by(id=1).first())
+
+@app.route('/upload')
+def upload_file():
+    return render_template('photo.html')
+
+@app.route('/uploader', methods=['POST'])
+def uploader():
+    if request.method =="POST":
+        f = request.files['archivo']
+        filename = secure_filename(f.filename)
+        f.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+        return redirect(url_for('show_all'))
 
 @app.route('/new', methods = ['GET', 'POST'])
 def new():
@@ -95,10 +111,10 @@ def academic():
       if not request.form['primary'] or not request.form['secundary']:
          flash('Please enter all the fields', 'error')
       else:
-         student = students1(request.form['primary'], request.form['secundary'],request.form['tecn1'],
+         student1 = students1(request.form['primary'], request.form['secundary'],request.form['tecn1'],
           request.form['tecn2'], request.form['collegue'], request.form['other'])
 
-         db.session.add(student)
+         db.session.add(student1)
          db.session.commit()
          flash('Record was successfully added')
          return redirect(url_for('show_all'))
@@ -110,10 +126,10 @@ def hobbies():
       if not request.form['in1'] or not request.form['in2']:
          flash('Please enter all the fields', 'error')
       else:
-         student = students2(request.form['in1'], request.form['in2'],request.form['in3'],
+         student2 = students2(request.form['in1'], request.form['in2'],request.form['in3'],
           request.form['in4'], request.form['in5'])
 
-         db.session.add(student)
+         db.session.add(student2)
          db.session.commit()
          flash('Record was successfully added')
          return redirect(url_for('show_all'))

@@ -21,6 +21,7 @@
         <table>
            <thead>
               <tr>
+                 <th>Foto</th>
                  <th>Nombres</th>
                  <th>Apellidos</th>
                  <th>Codigo</th>
@@ -39,6 +40,7 @@
            <tbody>
               {% for student in students %}
                  <tr>
+                    <td><a href="{{ url_for('upload_file') }}"><center><img src="https://icon-library.com/images/image-icon-png/image-icon-png-6.jpg" width="30px"></center></a></td>
                     <td>{{ student.name }}</td>
                     <td>{{ student.lastName }}</td>
                     <td>{{ student.code }}</td>
