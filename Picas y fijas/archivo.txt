@@ -1,0 +1,40 @@
+Diego,3,1,321,0,3
+LIDERES DE 3 CIFRAS:['Diego', '-']
+LIDERES DE 4 CIFRAS:[]
+LIDERES DE 5 CIFRAS:[]
+
+Steven,3,1,693,2,1
+Steven,3,2,639,0,3
+LIDERES DE 3 CIFRAS:['Diego', '-']
+LIDERES DE 4 CIFRAS:[]
+LIDERES DE 5 CIFRAS:[]
+
+Steven,4,1,8670,0,4
+LIDERES DE 3 CIFRAS:['Diego', '-']
+LIDERES DE 4 CIFRAS:['Steven', '-']
+LIDERES DE 5 CIFRAS:[]
+
+Diego,4,1,6540,0,4
+LIDERES DE 3 CIFRAS:['Diego', '-']
+LIDERES DE 4 CIFRAS:['Steven', '-', 'Diego', '-']
+LIDERES DE 5 CIFRAS:[]
+
+Mom,3,1,461,0,3
+LIDERES DE 3 CIFRAS:['Diego', '-', 'Mom', '-']
+LIDERES DE 4 CIFRAS:['Steven', '-', 'Diego', '-']
+LIDERES DE 5 CIFRAS:[]
+
+Terminado,3,1,501,1,0
+Terminado,3,2,478,1,0
+Terminado,3,3,932,0,1
+Terminado,3,4,852,1,0
+Terminado,3,5,123,1,0
+Terminado,3,6,123,1,0
+Terminado,3,7,123,1,0
+Terminado,3,8,123,1,0
+Terminado,3,9,123,1,0
+LIDERES DE 3 CIFRAS:['Diego', '-', 'Mom', '-']
+LIDERES DE 4 CIFRAS:['Steven', '-', 'Diego', '-']
+LIDERES DE 5 CIFRAS:[]
+
+Terminado,3,10,123,1,0
