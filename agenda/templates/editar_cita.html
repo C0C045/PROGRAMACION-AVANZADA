@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Editar citas</title>
+  </head>
+    <body>
+        <header>
+          <nav>
+            <ul>
+              <li><a href="{{ url_for('ver_citas') }}" class="text">CITAS</a></li>
+              <li><a href="{{ url_for('ver_contactos') }}" class="text">CONTACTOS</a></li>
+              <li><a href="{{ url_for('ver_usuarios') }}" class="text">USUARIOS</a></li>
+              <li><a href="{{ url_for('ver_todos') }}" class="text">TODOS</a></li>
+            </ul>
+          </nav>
+        </header>
+        <form action="{{ request.path }}" method="POST">
+            <input type="hidden" id="id" name="id" value="{{ citas[0] }}"/>
+            <label for="con_id">Id contacto: </label>
+            <input type="text" id="con_id" name="con_id" value="{{ citas[1] }}"/><br>
+            
+
+            <label for="lugar">Lugar: </label>
+            <input type="text" id="lugar" name="lugar" value="{{ citas[2] }}"/><br>
+
+            <label for="fecha">Fecha: </label>
+            <input type="date" id="fecha" name="fecha"
+                    value="{{ citas[3] }}" 
+                    min="2000-00-00" max="2020-12-31"/><br>
+            
+            <label for="hora">Hora: </label>        
+            <input type="time" id="hora" name="hora" value="{{ citas[4] }}"/><br>
+            
+
+            <textarea name="descripcion" value="{{ citas[4] }}"  rows="10" cols="40" placeholder="Escribe aquí la descripción"></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>

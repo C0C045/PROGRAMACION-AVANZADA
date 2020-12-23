@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Agregar citas</title>
+  </head>
+    <body>
+        <header>
+          <nav>
+            <ul>
+              <li><a href="{{ url_for('ver_citas') }}" class="text">CITAS</a></li>
+              <li><a href="{{ url_for('ver_contactos') }}" class="text">CONTACTOS</a></li>
+              <li><a href="{{ url_for('ver_usuarios') }}" class="text">USUARIOS</a></li>
+              <li><a href="{{ url_for('ver_todos') }}" class="text">TODOS</a></li>
+            </ul>
+          </nav>
+        </header>
+        <form action="{{ request.path }}" method="POST">
+            <label for="con_id">Id Contacto: </label>
+            <input type="text" id="con_id" name="con_id"/><br>
+
+            <label for="lugar">Lugar: </label>
+            <input type="text" id="lugar" name="lugar"/><br>
+
+            <label for="fecha">Fecha: </label>
+            <input type="date" id="fecha" name="fecha"
+                    value="2018-07-22" 
+                    min="2000-00-00" max="2020-12-31"/><br>
+
+            <label for="fecha">Hora: </label>
+            <input type="time" id="hora" name="hora"/><br>
+
+            <textarea name="descripcion" rows="10" cols="40" placeholder="Escribe aquí la descripción"></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>

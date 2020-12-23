@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Editar usuario</title>
+  </head>
+    <body>
+        <header>
+          <nav>
+            <ul>
+              <li><a href="{{ url_for('ver_citas') }}" class="text">CITAS</a></li>
+              <li><a href="{{ url_for('ver_contactos') }}" class="text">CONTACTOS</a></li>
+              <li><a href="{{ url_for('ver_usuarios') }}" class="text">USUARIOS</a></li>
+              <li><a href="{{ url_for('ver_todos') }}" class="text">TODOS</a></li>
+            </ul>
+          </nav>
+        </header>
+        <form action="{{ request.path }}" method="POST">
+            <input type="hidden" id="id" name="id" value="{{ contactos[0] }}"/>
+            <label for="nombre">Id Usuario: </label>
+            <input type="text" id="usu_id" name="usu_id" value="{{ contactos[1] }}"/><br>
+
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" value="{{ contactos[2] }}"/><br>
+
+            <label for="apellido">Apellido: </label>
+            <input type="text" id="apellido" name="apellido" value="{{ contactos[3] }}"/><br>
+
+            <label for="direccion">Dirección: </label>
+            <input type="text" id="direccion" name="direccion" value="{{ contactos[4] }}"/><br>
+
+            <label for="telefono">Telefono: </label>
+            <input type="text" id="telefono" name="telefono" value="{{ contactos[5] }}"/><br>
+
+            <label for="email">Email: </label>
+            <input type="text" id="email" name="email" value="{{ contactos[6] }}"/><br>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>

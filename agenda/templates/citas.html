@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>CITAS</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="{{ url_for('ver_citas') }}" class="text">CITAS</a></li>
+          <li><a href="{{ url_for('ver_contactos') }}" class="text">CONTACTOS</a></li>
+          <li><a href="{{ url_for('ver_usuarios') }}" class="text">USUARIOS</a></li>
+          <li><a href="{{ url_for('ver_todos') }}" class="text">TODOS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>CITAS</h1>
+    <table class="norm" border='1'>
+        <tr>
+            <th>ID Cita</th>
+            <th>ID Contactos</th>
+            <th>Lugar</th>
+            <th>Fecha </th>
+            <th>Hora</th>
+            <th>Descripción</th>
+            <th colspan="3">Edición</th>
+        </tr>
+        {% for u in citas %}
+        <tr>
+            <td>{{ u[0] }}</td>
+            <td>{{ u[1] }}</td>
+            <td>{{ u[2] }}</td>
+            <td>{{ u[3] }}</td>
+            <td>{{ u[4] }}</td>
+            <td>{{ u[5] }}</td>
+            <td><a href="/actualizar_cita?id={{ u[0] }}"><center><img src="https://cdn.icon-icons.com/icons2/1380/PNG/512/vcsupdaterequired_93493.png" width="30px"></center></a></td>
+            <td><a href="/eliminar_cita?id={{ u[0] }}"><center><img src="https://ayudawp.com/wp-content/uploads/2018/04/borrar-plugins-wordpress.png" width="30px"></center></a></td>
+        </tr>
+    {% endfor %}
+    </table>
+    <p></p>
+    <a class="fin" href="/agregar_cita">Agregar cita</a>
+  </body>
+</html>
