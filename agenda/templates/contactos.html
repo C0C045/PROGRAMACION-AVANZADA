@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>CONTACTOS</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="{{ url_for('ver_citas') }}" class="text">CITAS</a></li>
+          <li><a href="{{ url_for('ver_contactos') }}" class="text">CONTACTOS</a></li>
+          <li><a href="{{ url_for('ver_usuarios') }}" class="text">USUARIOS</a></li>
+          <li><a href="{{ url_for('ver_todos') }}" class="text">TODOS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>CONTACTOS</h1>
+    <table class="cont" border='1'>
+        <tr>
+            <th>ID Contacto</th>
+            <th>ID Usuarios</th>
+            <th>Nombre usuario</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Dirección</th>
+            <th>Telefono</th>
+            <th>Email</th>
+            <th colspan="3">Edición</th>
+        </tr>
+        {% for u in contactos%}
+        <tr>
+            <td>{{ u[0] }}</td>
+            <td>{{ u[1] }}</td>
+            <td>{{ u[2] }}</td>
+            <td>{{ u[3] }}</td>
+            <td>{{ u[4] }}</td>
+            <td>{{ u[5] }}</td>
+            <td>{{ u[6] }}</td>
+            <td>{{ u[7] }}</td>
+            <td><button>Actualizar</button></td>
+            <td><button>Agregar</button></td>
+            <td><button>Eliminar</button></td>
+        </tr>
+    {% endfor %}
+    </table>
+    <p></p>
+    <button class="fin">Agregar contacto</button>
+  </body>
+</html>
