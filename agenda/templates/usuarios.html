@@ -25,6 +25,7 @@
             <th colspan="3">Edición</th>
         </tr>
         {% for u in usuarios%}
+<<<<<<< HEAD
         <tr>
             <td>{{ u[0] }}</td>
             <td>{{ u[1] }}</td>
@@ -36,5 +37,17 @@
     </table>
     <p></p>
     <button class="fin">Agregar usuario</button>
+=======
+          <tr>
+              <td>{{ u[0] }}</td>
+              <td>{{ u[1] }}</td>
+              <td><a href="/actualizar_usuario?id={{ u[0] }}"><center><img src="https://cdn.icon-icons.com/icons2/1380/PNG/512/vcsupdaterequired_93493.png" width="30px"></center></a></td>
+            <td><a href="/eliminar_usuario?id={{ u[0] }}"><center><img src="https://ayudawp.com/wp-content/uploads/2018/04/borrar-plugins-wordpress.png" width="30px"></center></a></td>
+          </tr>
+        {% endfor %}
+    </table>
+    <p></p>
+    <a class="fin" href="/agregar_usuario">Agregar usuario</a>
+>>>>>>> 5a1474342d1c1f218afcd6b52c21c6744b3a00eb
   </body>
 </html>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   margin:0;
   padding:0;
@@ -75,3 +76,147 @@ table tr td, table tr th {
 button.fin {
   margin-left:45%;
 }
+=======
+* {
+  margin:0;
+  padding:0;
+}
+
+body{
+  background:#e6e6e6;
+  font-family:helvetica;
+}
+
+header,body{
+  width:90%;
+  margin:20px auto;
+  max-width:1000px;
+}
+
+header nav {
+  background:#528FD5;
+  overflow:hidden;
+}
+
+header nav ul{
+  list-style:none;
+  margin-left:22%;
+}
+
+header nav ul li {
+  float:left;
+}
+
+header nav ul li a {
+  padding:10px 20px;
+  display:block;
+  color:#fff;
+  text-decoration:none;
+}
+
+header nav ul li a:hover {
+  background:#75ACEC;
+}
+/*Titulo*/
+h1{
+  text-align:center;
+}
+/*tabla*/
+
+table.norm {
+  padding:0px 0px 20px 10%;
+  width:90%;
+  border-collapse:separate;
+  border-style:hidden;
+  border-spacing:5px 15px;
+}
+
+table.cont {
+  padding:0px 0px 20px 0;
+  border-collapse:separate;
+  border-style:hidden;
+  border-spacing:5px 15px;
+}
+
+table tr td, table tr th {
+  border-width: 2px;
+  border-style: solid;
+  border-color:#B8D7B7;
+  background:#B8D7B7;
+  padding-left:5px;
+  padding-right:5px;
+  padding-bottom: 5px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.fin {
+  font-family:helvetica;
+  margin-left:70%;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  background-color: #528fd5;
+  border-radius: 6px;
+  border: 2px solid #528fd5;
+}
+
+.fin:hover{
+  color: black;
+  background-color: white;
+}
+
+form{
+  width:300px;
+  padding:16px;
+  border-radius:10px;
+  margin:auto;
+  background-color:#ccc;
+}
+
+form label{
+  width:72px;
+  font-weight:bold;
+  display:inline-block;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"]{
+  width:180px;
+  padding:3px 10px;
+  border:1px solid #f6f6f6;
+  border-radius:3px;
+  background-color:#f6f6f6;
+  margin:8px 0;
+  display:inline-block;
+}
+
+form input[type="submit"]{
+  width:100%;
+  padding:8px 16px;
+  margin-top:32px;
+  border:1px solid #000;
+  border-radius:5px;
+  display:block;
+  color:#fff;
+  background-color:#000;
+} 
+
+form input[type="submit"]:hover{
+  cursor:pointer;
+}
+
+textarea{
+  width:100%;
+  height:100px;
+  border:1px solid #f6f6f6;
+  border-radius:3px;
+  background-color:#f6f6f6;     
+  margin:8px 0;
+  resize:none;
+  display:block;
+}
+>>>>>>> 5a1474342d1c1f218afcd6b52c21c6744b3a00eb
