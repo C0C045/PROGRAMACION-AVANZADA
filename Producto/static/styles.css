@@ -1,0 +1,37 @@
+* {
+  margin:0;
+  padding:0;
+}
+ body {
+   background:#e6e6e6;
+ }
+
+table{
+  padding-top: 250px;
+  padding-left: 500px;
+}
+
+th {
+  margin-left:50%;
+  background:#F29040;
+  border-top-right-radius: 10px;
+ 	border-bottom-left-radius: 10px;
+ 	margin:2em;
+ 	padding:1em;
+ 	font-family:Arial;
+ 	font-size:0.9em;
+}
+
+ td {
+ 	margin-left:50%;
+ 	border-style: solid;
+ 	border:1px solid #F29040;
+ 	border-top-right-radius: 10px;
+ 	border-bottom-left-radius: 10px;
+  text-align:center;
+ 	margin:2em;
+ 	padding:1em;
+ 	font-family:Arial;
+ 	font-size:0.9em;
+ 	background:#f4a261;
+ }

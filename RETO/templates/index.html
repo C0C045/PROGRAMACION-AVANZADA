@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
+    <title>Mi Drive</title>
+</head>
+<body>
+    <section class="fondo">
+    <h1>My Drive</h1>
+    <h2>Si desea subir un archivo</h2>
+    <form action="/subir" method="POST" enctype="multipart/form-data">
+        <input type="file" name="archivo">
+        <input type="submit">
+    </form>
+    <br><hr><br>
+    <h2>Si desea subir una carpeta</h2>
+    <form action="/crear" method="POST">
+        <label for="">Nombre de la carpeta: <br></label>
+        <input type="text" name="carpeta">
+        <input type="submit">
+    </form>
+    </section>
+</body>
+</html>
