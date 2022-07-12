@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Pokemon</title>
+</head>
+<body>
+  <header>
+    <div><marquee BEHAVIOR=ALTERNATE SCROLLAMOUNT=18>¡Escoge a tu Pokemon!</marquee></div>
+  </header>
+  <section>
+    <div id="ia"></div>
+    <form id="form" method="post">
+      <label for="pokemon">¿Qué pokemon quieres invocar?</label><br>
+      <input type="text" name="pokemon" id="pokemon"><br>
+      <button type="submit">¡ELEGIR!</button>
+    </form>
+  </section>
+  <footer>
+    <div>NOMBRE<br><p id="pname"></p></div>
+    <div>ID<br><p id="pid"></p></div>
+    <div>HABILIDADES<br><p id="pab"></p></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
