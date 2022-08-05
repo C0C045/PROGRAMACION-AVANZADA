@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/css/toastr.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/js/toastr.min.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Lista Estudantil</title>
+</head>
+
+<body>
+  <%- toasts %>
+  <nav>
+    <div>
+      <a href="/">Inicio</a>
+      <a class="selected" href="/cursos">Cursos</a>
+      <a href="/estudiantes">Estudiantes</a>
+    </div>
+  </nav>
+  <section>
+    <a href="/menoresTres/?nombre=<%=data.nombre%>" title="Nota menor a tres">
+      <i class="menor fa-solid fa-arrow-trend-down"></i>
+    </a>
+    <a href="/ordenarMejor/?nombre=<%=data.nombre%>" title="Ordenar por mejor nota">
+      <i class="orden fa-solid fa-arrow-down-9-1"></i>
+    </a>
+    <div class="container">
+      <div class="card-title">
+        <div>
+          <h1 class="line"><%=data.nombre%></h1>
+          <p><%=data.tipo%> / créditos: <%=data.creditos%></p>
+          <p></p>
+        </div>
+        <span>Estudiantes: <%= data.estudiantes.length %></span>
+      </div>
+
+      <% dataE.forEach(function(est){ %>
+        <ul class="list-group">
+          <li>
+            <p id="code"><%=est.codigo%></p>
+            <p id="name"><%=est.nombre%> <%=est.apellido%></p>
+            <% for(nombreC in est.notas){ %>
+              <% if(nombreC == data.nombre){ %>
+                <% for(let i=0; i<(est.notas[nombreC]).length-1; i++){ %>
+                  <p id="nota"><%=(est.notas[nombreC])[i]%></p>
+                <% } %>
+                <p id="total"><%=(est.notas[nombreC])[(est.notas[nombreC]).length-1]%></p>
+                <div>
+                  <a href="/eliminarEstudianteCurso/?nombre=<%=data.nombre%>&codigo=<%=est.codigo%>">
+                    <i class="delete fas fa-trash-alt"></i>
+                  </a>
+                  <a href="/actualizarN/?nombre=<%=data.nombre%>&codigo=<%=est.codigo%>">
+                    <i class="edit fas fa-edit"></i>
+                  </a>
+                </div>
+              <% } %>
+            <% } %>
+          </li>
+        </ul>
+      <% }) %>
+    </div>
+    <a title="Agregar Estudiante" class="fixed" href="/agregarE/?nombre=<%=data.nombre%>"><i class="fas fa-plus"></i></a>
+  </section>
+  <script src="https://kit.fontawesome.com/d382b224a2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

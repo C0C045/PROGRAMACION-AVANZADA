@@ -1,0 +1,180 @@
+[
+    {
+        "nombre": "Diego",
+        "apellido": "Bautista",
+        "codigo": 20192020139,
+        "notas": {
+            "Modelos": [
+                2.5,
+                5,
+                4,
+                3.8
+            ],
+            "Arquitectura": [
+                3.7,
+                4.8,
+                5,
+                2,
+                3.8
+            ]
+        }
+    },
+    {
+        "nombre": "Daniel",
+        "apellido": "Peña",
+        "codigo": 20192020140,
+        "notas": {
+            "Investigación": [
+                4,
+                4,
+                4,
+                4
+            ]
+        }
+    },
+    {
+        "nombre": "Steven",
+        "apellido": "Espejo",
+        "codigo": 20192020138,
+        "notas": {
+            "Arquitectura": [
+                3,
+                2.7,
+                3,
+                3,
+                2.9
+            ],
+            "Cibernética": [
+                3.5,
+                2.6,
+                4.8,
+                5,
+                3.9
+            ]
+        }
+    },
+    {
+        "nombre": "Mafe",
+        "apellido": "Cardozo",
+        "codigo": 20182021004,
+        "notas": {
+            "Fundamentos": [
+                2,
+                2,
+                2,
+                1,
+                1.8
+            ]
+        }
+    },
+    {
+        "nombre": "Carolay",
+        "apellido": "Herrera",
+        "codigo": 20172021110,
+        "notas": {
+            "Arquitectura": [
+                4.8,
+                3,
+                3.6,
+                4.4,
+                4
+            ],
+            "Métodos": [
+                4,
+                4,
+                4,
+                4
+            ]
+        }
+    },
+    {
+        "nombre": "María",
+        "apellido": "Cabarcas",
+        "codigo": 20192021090,
+        "notas": {
+            "Investigación": [
+                4,
+                5,
+                1.7,
+                3.7
+            ],
+            "Fundamentos": [
+                5,
+                5,
+                5,
+                2.3,
+                4.3
+            ],
+            "Métodos": [
+                2,
+                2,
+                2,
+                2
+            ]
+        }
+    },
+    {
+        "nombre": "Ruben",
+        "apellido": "Marín",
+        "codigo": 20172120145,
+        "notas": {
+            "Investigación": [
+                2.5,
+                3,
+                3,
+                2.8
+            ]
+        }
+    },
+    {
+        "nombre": "Enrique",
+        "apellido": "González",
+        "codigo": 20192021124,
+        "notas": {
+            "Métodos": [
+                3.5,
+                3.5,
+                3.5,
+                3.5
+            ]
+        }
+    },
+    {
+        "nombre": "Daniela",
+        "apellido": "Avila",
+        "codigo": 20152120045,
+        "notas": {
+            "Investigación": [
+                4,
+                4,
+                3.7,
+                3.9
+            ]
+        }
+    },
+    {
+        "nombre": "Adriana",
+        "apellido": "Parra",
+        "codigo": 20182120061,
+        "notas": {}
+    },
+    {
+        "nombre": "Violeta",
+        "apellido": "Fuentes",
+        "codigo": 20172020123,
+        "notas": {}
+    },
+    {
+        "nombre": "Felipe",
+        "apellido": "Rojas",
+        "codigo": 20152120010,
+        "notas": {
+            "Modelos": [
+                5,
+                5,
+                5,
+                5
+            ]
+        }
+    }
+]

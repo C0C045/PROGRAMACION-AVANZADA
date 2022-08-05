@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Inicio</title>
+</head>
+
+<body>
+  <nav>
+    <div>
+      <a class="selected" href="/">Inicio</a>
+      <a href="/cursos">Cursos</a>
+      <a href="/estudiantes">Estudiantes</a>
+    </div>
+    <a href="/insertarData">Insertar Data</a>
+  </nav>
+
+  <section>
+    <div class="container">
+      <div class="card-title">
+        <h1 class="line">Mejores 10 Promedios</h1>
+      </div>
+      <% dataP.forEach(function(i){ %>
+        <ul class="list-group">
+          <li>
+            <p id="code"><%=i[0]%></p>
+            <% estudiantes.forEach(function(est) { %>
+              <% if(i[0] == est.codigo) { %>
+                <p id="name"><%=est.nombre%> <%=est.apellido%></p>
+              <% } %>
+            <% }) %>
+            <p><%=i[1]%></p>
+          </li>
+        </ul>
+      <% }) %>
+    </div>
+
+    <div class="container">
+      <div class="card-title">
+        <h1 class="line">Estudiantes sin Inscripciones</h1>
+      </div>
+      <% dataI.forEach(function(i){ %>
+        <ul class="list-group">
+          <li>
+            <p id="code"><%=i.codigo%></p>
+            <p id="name"><%=i.nombre%> <%=i.apellido%></p>
+          </li>
+        </ul>
+      <% }) %>
+    </div>
+  </section>
+</body>
+
+</html>

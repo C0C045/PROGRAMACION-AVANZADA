@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Crear estudiante</title>
+</head>
+
+<body>
+    <a href="/estudiantes" title="Volver"><i class="volver fas fa-angle-double-left"></i></a>
+    <div class="formulario">
+        <form action="/estudiante/crear" method="POST">
+            <h1>Crear Estudiante</h1>
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="text" name="apellido" placeholder="Apellido" required>
+            <input type="text" name="codigo" placeholder="Código" required>
+            <input type="submit" value="CREAR">
+        </form>
+    </div>
+    <script src="https://kit.fontawesome.com/d382b224a2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

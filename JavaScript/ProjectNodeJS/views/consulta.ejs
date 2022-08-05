@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title><%= nombre %></title>
+</head>
+
+<body>
+    <nav>
+      <div>
+        <a href="/">Inicio</a>
+        <a class="selected" href="/cursos">Cursos</a>
+        <a href="/estudiantes">Estudiantes</a>
+      </div>
+    </nav>
+
+    <section>
+        <a href="/curso/buscar/?nombre=<%= cursoN %>" title="Volver"><i class="volver volverAux fas fa-angle-double-left"></i></a>
+        <div class="container">
+            <div class="card-title">
+                <div>
+                    <h1 class="line"><%= nombre %></h1>
+                </div>
+            
+            </div>
+  
+            <% data.forEach(function(est){ %>
+            <ul class="list-group">
+                <li>
+                <p id="code"><%=est.codigo%></p>
+                <p id="name"><%=est.nombre%> <%=est.apellido%></p>
+                <% for(nombreC in est.notas){ %>
+                    <% if(nombreC == cursoN){ %>
+                    <% for(let i=0; i<(est.notas[nombreC]).length-1; i++){ %>
+                        <p id="nota"><%=(est.notas[nombreC])[i]%></p>
+                    <% } %>
+                    <p id="total"><%=(est.notas[nombreC])[(est.notas[nombreC]).length-1]%></p>
+                    <% } %>
+                <% } %>
+                </li>
+            </ul>
+            <% }) %>
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/d382b224a2.js" crossorigin="anonymous"></script>
+  </body>
+</html>

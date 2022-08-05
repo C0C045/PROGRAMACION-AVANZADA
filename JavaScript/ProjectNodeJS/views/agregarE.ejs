@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Agregar un estudiante</title>
+</head>
+
+<body>
+    <a href="/curso/buscar/?nombre=<%=data.nombre%>" title="Volver"><i class="volver fas fa-angle-double-left"></i></a>
+    <div class="formulario">
+        <form action="/insertarEstudiante/" method="POST">
+            <h1>Agregar estudiante</h1>
+            <input type="hidden" name="nombre" value="<%=data.nombre%>">
+            <input id="disabled" type="text" placeholder="Nombre" value="<%=data.nombre%>" disabled>
+
+            <select name="codigo">
+                <% dataE.forEach(function(estudiante){ %>
+                    <% if(!(data.estudiantes).includes(estudiante.codigo)){ %>
+                        <option value="<%=estudiante.codigo%>"><%=estudiante.codigo%></option>
+                    <% } %>
+                <% }) %>
+            </select>
+
+            <input type="number" step=".01" name="nota1" min="0" max="5" placeholder="Nota 1" required>
+            <input type="number" step=".01" name="nota2" min="0" max="5" placeholder="Nota 2" required>
+            <input type="number" step=".01" name="nota3" min="0" max="5" placeholder="Nota 3" required>
+            <% if(data.tipo == 'teórico-practico'){ %>
+                <input type="number" step=".01" name="nota4" min="0" max="5" placeholder="Nota 4" required>
+            <% } %>
+            <input type="submit" value="AGREGAR">
+        </form>
+    </div>
+    <script src="https://kit.fontawesome.com/d382b224a2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

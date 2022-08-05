@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Actualizar notas</title>
+  
+</head>
+
+<body>
+    <a href="/curso/buscar/?nombre=<%=data.nombre%>" title="Volver"><i class="volver fas fa-angle-double-left"></i></a>
+    <div class="formulario">
+        <form action="/actualizarNotas" method="POST">
+            <h1>Actualizar notas</h1>
+            <input type="hidden" name="nombre" value="<%=data.nombre%>">
+            <input id="disabled" type="text" placeholder="Nombre" value="<%=data.nombre%>" disabled>
+
+            <input type="hidden" name="codigo" value="<%=data.codigo%>">
+            <input id="disabled" type="text" placeholder="codigo" value="<%=data.codigo%>" disabled>
+
+            <input type="number" step=".01" name="nota1" min="0" max="5" placeholder="Nota 1" value="<%=dataN[0]%>" required>
+            <input type="number" step=".01" name="nota2" min="0" max="5" placeholder="Nota 2" value="<%=dataN[1]%>" required>
+            <input type="number" step=".01" name="nota3" min="0" max="5" placeholder="Nota 3" value="<%=dataN[2]%>" required>
+            <% if(dataC.tipo == 'teórico-practico'){ %>
+                <input type="number" step=".01" name="nota4" min="0" max="5" placeholder="Nota 4" value="<%=dataN[3]%>" required>
+            <% } %>
+            <input type="submit" value="ACTUALIZAR">
+        </form>
+    </div>
+    <script src="https://kit.fontawesome.com/d382b224a2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

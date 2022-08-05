@@ -1,0 +1,59 @@
+[
+    {
+        "nombre": "Arquitectura",
+        "tipo": "teórico-practico",
+        "creditos": 2,
+        "estudiantes": [
+            20192020138,
+            20172021110,
+            20192020139
+        ]
+    },
+    {
+        "nombre": "Modelos",
+        "tipo": "teórico",
+        "creditos": 3,
+        "estudiantes": [
+            20192020139,
+            20152120010
+        ]
+    },
+    {
+        "nombre": "Investigación",
+        "tipo": "teórico",
+        "creditos": 3,
+        "estudiantes": [
+            20152120045,
+            20192021090,
+            20172120145,
+            20192020140
+        ]
+    },
+    {
+        "nombre": "Cibernética",
+        "tipo": "teórico-practico",
+        "creditos": 2,
+        "estudiantes": [
+            20192020138
+        ]
+    },
+    {
+        "nombre": "Fundamentos",
+        "tipo": "teórico-practico",
+        "creditos": 3,
+        "estudiantes": [
+            20192021090,
+            20182021004
+        ]
+    },
+    {
+        "nombre": "Métodos",
+        "tipo": "teórico",
+        "creditos": 2,
+        "estudiantes": [
+            20172021110,
+            20192021090,
+            20192021124
+        ]
+    }
+]

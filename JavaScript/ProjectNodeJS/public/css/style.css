@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:#E5E7E9;
+}
+
+nav {
+    width: 15%;
+    background-color: #212121;
+    float: left;
+    position: fixed;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav a {
+    font-size: 20px;
+    overflow: hidden;
+    background-color: #212121;
+    text-decoration: none;
+    color: white;
+    padding: 15px 0px 15px 30px;
+    display: block;
+}
+
+nav a:hover{
+    background-color: #E5E7E9;
+    color: #212121;
+}
+
+nav .selected{
+    background-color: #E5E7E9;
+    color: #212121;
+}
+
+section {
+    margin-left: 15%;
+    margin-bottom: 10px;
+    padding: 15px;;
+    color: #393f37;
+}
+
+.container {
+    background-color: white;
+    width: 60%;
+    margin: 30px auto;
+    padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+    font-size: 1rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    border-bottom: 1px solid #ddd;
+    margin-top: -1px;
+    padding: 15px;
+}
+
+.list-group li, .card-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#name{
+    width: 120px;
+}
+
+#code, #total, #nameC {
+    font-weight: bold;
+}
+
+.card-title span{
+    background-color: cadetblue;
+    padding: 5px 15px 5px 15px;
+    color: white;
+    border-radius: 15px ;
+}
+
+.list-group li:hover{
+    background-color: rgba(230, 230, 230, 0.464);
+    cursor: pointer;
+}
+
+.list-group li .tipo, .card-title p{
+    color: rgb(159, 159, 159);
+}
+
+.card-title {
+    padding: 15px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formulario {
+    margin: 0 auto;
+    width: 260px;
+    background-color: #212121;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.formulario h1{
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+input[type=text], input[type=number], input[type=file], select{
+    width: 100%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit], #subir_archivo {
+    width: 100%;
+    background-color: cadetblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover, #subir_archivo:hover {
+    background-color: #ddd;
+    color: #212121;
+}
+
+.volver {
+    font-size: 30px;
+    color: #212121;
+    margin:20px 0px 0px 20px ;
+}
+
+.volver:hover {
+    color: cadetblue;
+}
+
+.delete {
+    color: #e76f51;
+}
+
+.delete:hover {
+    color: #e63946;
+}
+
+.edit {
+    color: #0a9396;
+}
+
+.edit:hover {
+    color: #005f73;
+}
+
+.fixed {
+    padding: 12px 15px;
+    border-radius: 25px;
+    position: fixed;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #5f9ea0;
+    right: 20px;
+    bottom: 20px;
+    color: white;
+}
+
+.fixed:hover {
+    background-color: #005f73;
+}
+
+#disabled {
+    color: white;
+}
+
+.formulario label, .file{
+    color: white;
+}
+
+#resultado {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.menor {
+    font-size: 1.5rem;
+    background-color: rgb(206, 202, 202);
+    padding: 5px;
+    border-radius: 10px;
+    color: #e63946;
+    position: absolute;
+    left: 16%;
+}
+
+.orden {
+    font-size: 1.5rem;
+    background-color: rgb(206, 202, 202);
+    padding: 5px;
+    border-radius: 10px;
+    color: darkgreen;
+    position: absolute;
+    left: 19.5%;
+}
+
+.menor:hover {
+    background-color: #e63946 ;
+    color: rgb(206, 202, 202);
+}
+
+.orden:hover {
+    background-color: darkgreen;
+    color: rgb(206, 202, 202) ;
+}
+
+.volverAux {
+    position: absolute;
+}
